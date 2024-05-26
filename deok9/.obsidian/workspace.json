@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "cf75ce59ece740aa",
+    "type": "split",
+    "children": [
+      {
+        "id": "8020408063539c37",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f871075394ea8363",
+            "type": "leaf",
+            "state": {
+              "type": "mindmapView",
+              "state": {
+                "file": "linux/apache.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3cc70388844f79e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "3221549499c2e75d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f533474278ae7ecf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1a002894b61f44e5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d4658ef91a3903e2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9c9b18f02a0599a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "4fafb2a24cb15f1d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "85be49b7f6945474",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "linux/apache.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "543951c4f6e11817",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "linux/apache.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "76093a86231eed24",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "84c63278539c16e9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "linux/apache.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "f871075394ea8363",
+  "lastOpenFiles": [
+    "linux/제어문.md",
+    "linux/command.md",
+    "linux/isms.md",
+    "linux/apache.md",
+    "study/정처기/실기.md",
+    "무제 파일.canvas",
+    "Allow.md",
+    "linux/apache/무제 파일.md",
+    "linux/apache",
+    "Linux/apache/Untitled mindmap.md",
+    "study/정처기",
+    "container",
+    "study",
+    "project",
+    "linux",
+    "무제 폴더",
+    "Linux/apache/apache-config.md",
+    "Welcome.md",
+    "Linux/apache",
+    "Linux/apache-config",
+    "Project"
+  ]
+}

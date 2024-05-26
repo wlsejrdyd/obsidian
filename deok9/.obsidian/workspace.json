@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "linux/disk.md"
+                "file": "git/git.md"
               }
             }
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/disk.md",
+                "file": "git/git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/disk.md",
+                "file": "git/git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/disk.md"
+                "file": "git/git.md"
               }
             }
           }
@@ -147,11 +147,13 @@
   },
   "active": "f533474278ae7ecf",
   "lastOpenFiles": [
-    "linux/isms.md",
-    "linux/command.md",
     "linux/apache.md",
+    "git/git.md",
+    "git",
     "linux/제어문.md",
+    "linux/command.md",
     "linux/disk.md",
+    "linux/isms.md",
     "study/정처기/실기.md",
     "무제 파일.canvas",
     "Allow.md",
@@ -163,7 +165,6 @@
     "study",
     "project",
     "linux",
-    "무제 폴더",
     "Linux/apache/apache-config.md",
     "Welcome.md",
     "Linux/apache",

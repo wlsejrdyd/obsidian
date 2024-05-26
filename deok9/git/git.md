@@ -47,7 +47,9 @@ AWS EC2
 		origin  https://github.com/wlsejrdyd/scripts (push)
 		- - init : Git 저장소를 **생성**하거나 기존 저장소를 **다시 초기화**하세요.
 		- * remote add origin : 연결할(될) URL 주소 명시.
-- 업로드(push) 테스트
+
+## test
+- 업로드(push)
 
 	-
 	  ```
@@ -77,3 +79,67 @@ AWS EC2
 						- * **"세분화된 개인 액세스 토큰 만들기"** 로 진행함
 						- * 생성한 토큰값은 저장해 놓을 것
 						- * 저장소 권한 도 수정해 줘야 함
+				- * "./{filename}" 을 명시하지 않고 "." 를 입력할 경우 전체 파일을 선택하는 것이며, git rm --cached <file> 명령어로 등록 된 파일을 지울 수도 있다.
+
+					-
+					  ```
+					  git rm --cached .bash_profile .bashrc .cshrc .gitconfig .lesshst .ssh/authorized_keys .tcshrc
+					  ```
+
+						- rm '.bash_profile'
+						rm '.bashrc'
+						rm '.cshrc'
+						rm '.gitconfig'
+						rm '.lesshst'
+						rm '.ssh/authorized_keys'
+						rm '.tcshrc'
+
+							-
+							  ```
+							  git status
+							  ```
+
+								- On branch master
+								void
+								No commits yet
+								void
+								Changes to be committed:
+								(use "git rm --cached <file>..." to unstage)
+								new file:   .bash_logout
+								new file:   update_file_01
+								void
+								Untracked files:
+								(use "git add <file>..." to include in what will be committed)
+								.bash_history
+								.bash_profile
+								.bashrc
+								.cshrc
+								.gitconfig
+								.lesshst
+								.ssh/
+								.tcshrc
+- 복제(clone)
+
+	-
+	  ```
+	  
+	  git clone https://github.com/wlsejrdyd/deok
+	  ```
+
+		- Cloning into 'deok'...
+		remote: Enumerating objects: 109, done.
+		remote: Counting objects: 100% (29/29), done.
+		remote: Compressing objects: 100% (29/29), done.
+		remote: Total 109 (delta 5), reused 0 (delta 0), pack-reused 80
+		Receiving objects: 100% (109/109), 1.11 MiB | 25.81 MiB/s, done.
+		Resolving deltas: 100% (21/21), done.
+	- * 업로드 이후 첫 `clone` 은 문제가 없음. **(이미 디렉터리가 있으니까..)**, `pull`을 이용해 내용만을 갱신한다
+
+		-
+		  ```
+		  
+		  git clone https://github.com/wlsejrdyd/deok
+		  ```
+
+			- fatal: destination path 'deok' already exists and is not an empty directory.
+			- Sub title

@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "linux/apache.md"
+                "file": "linux/제어문.md"
               }
             }
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/apache.md",
+                "file": "linux/제어문.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/apache.md",
+                "file": "linux/제어문.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/apache.md"
+                "file": "linux/제어문.md"
               }
             }
           }
@@ -147,10 +147,10 @@
   },
   "active": "f871075394ea8363",
   "lastOpenFiles": [
+    "linux/apache.md",
     "linux/제어문.md",
     "linux/command.md",
     "linux/isms.md",
-    "linux/apache.md",
     "study/정처기/실기.md",
     "무제 파일.canvas",
     "Allow.md",

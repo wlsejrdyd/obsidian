@@ -43,21 +43,22 @@ mindmap-plugin: basic
 			  ```
 
 				- {HOME}/.htaccess 파일을 생성하여 추가하면 됨
+	- web server ip 사용차단
 
-	-
-	  ```
-	  
-	  <VirtualHost *:80>
-	  DocumentRoot /home/source/public_html
-	  ServerName x.x.x.x
-	  Redirect 403 /
-	  ErrorDocument 403 "nope"
-	  UseCanonicalName Off
-	  UserDir Disabled
-	  </VirtualHost>
-	  ```
+		-
+		  ```
+		  
+		  <VirtualHost *:80>
+		  DocumentRoot /home/source/public_html
+		  ServerName x.x.x.x
+		  Redirect 403 /
+		  ErrorDocument 403 "nope"
+		  UseCanonicalName Off
+		  UserDir Disabled
+		  </VirtualHost>
+		  ```
 
-		- web server ip 로 접근하는 방법을 차단한다
+			- web server ip 로 접근하는 방법을 차단한다
 	- https redirect
 
 		-

@@ -45,8 +45,10 @@ AWS EC2
 
 		- origin  https://github.com/wlsejrdyd/scripts (fetch)
 		origin  https://github.com/wlsejrdyd/scripts (push)
-		- * init : Git 저장소를 **생성**하거나 기존 저장소를 **다시 초기화**하세요.
-		- * remote add origin : 연결할(될) URL 주소 명시.
+		- Sub title
+			- init : Git 저장소를 **생성**하거나 기존 저장소를 **다시 초기화**하세요.
+		- Sub title
+			- remote add origin : 연결할(될) URL 주소 명시.
 
 ## test
 - 업로드(push)
@@ -117,12 +119,9 @@ AWS EC2
 									.tcshrc
 				- remote: Support for password authentication was removed on August 13, 2021.
 					- commit 이후 push 명령 실행시 위와 같은 에러가 나온다면 [SSH Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) 을 발급해야 함
-						- Sub title
-							- **"세분화된 개인 액세스 토큰 만들기"** 로 진행함
-						- Sub title
-							- 생성한 토큰값은 저장해 놓을 것
-						- Sub title
-							- 저장소 권한 도 수정해 줘야 함
+						- **"세분화된 개인 액세스 토큰 만들기"** 로 진행함
+						- 생성한 토큰값은 저장해 놓을 것
+						- 저장소 권한 도 수정해 줘야 함
 - 복제(clone)
 
 	-

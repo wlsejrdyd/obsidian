@@ -8,6 +8,24 @@ mindmap-plugin: basic
 
 ## 환경
 - CentOS 7.9
+- Log Server 192.168.57.1
+Host Server 192$ModLoad imuxsock # provides support for local system logging (e.g. via logger command)
+$ModLoad imjournal # provides access to the systemd journal
+$WorkDirectory /var/lib/rsyslog
+$ActionFileDefaultTemplate RSYSLOG_TraditionalFileFormat
+$IncludeConfig /etc/rsyslog.d/*.conf
+$OmitLocalLoggingon
+$IMJournalStateFile imjournal.state
+*.info;mail.none;authpriv.none;cron.none;local4.none;local5.none                /var/log/messages
+authpriv.*                                              /var/log/secure
+mail.*                                                  -/var/log/maillog
+cron.*                                                  /var/log/cron
+*.emerg                                                 :omusrmsg:*
+uucp,news.crit                                          /var/log/spooler
+local7.*                                                /var/log/boot.log
+local4.notice   /var/log/.cmd.log
+local5.*        @@192.168.57.2
+```
 
 ## rsyslog.conf
 - Log Server
@@ -37,4 +55,24 @@ mindmap-plugin: basic
 	  ```
 
 - Host Server
-	- Sub title
+
+	-
+	  ```
+	  
+	  $ModLoad imuxsock # provides support for local system logging (e.g. via logger command)
+	  $ModLoad imjournal # provides access to the systemd journal
+	  $WorkDirectory /var/lib/rsyslog
+	  $ActionFileDefaultTemplate RSYSLOG_TraditionalFileFormat
+	  $IncludeConfig /etc/rsyslog.d/*.conf
+	  $OmitLocalLogging on
+	  $IMJournalStateFile imjournal.state
+	  *.info;mail.none;authpriv.none;cron.none;local4.none;local5.none                /var/log/messages
+	  authpriv.*                                              /var/log/secure
+	  mail.*                                                  -/var/log/maillog
+	  cron.*                                                  /var/log/cron
+	  *.emerg                                                 :omusrmsg:*
+	  uucp,news.crit                                          /var/log/spooler
+	  local7.*                                                /var/log/boot.log
+	  local4.notice   /var/log/.cmd.log
+	  local5.*        @@192.168.57.2
+	  ```

@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "git/git.md"
+                "file": "linux/rsyslog.md"
               }
             }
           }
@@ -67,7 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "9c9b18f02a0599a1",
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git/git.md",
+                "file": "linux/rsyslog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "git/git.md",
+                "file": "linux/rsyslog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git/git.md"
+                "file": "linux/rsyslog.md"
               }
             }
           }
@@ -145,15 +145,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f871075394ea8363",
+  "active": "f533474278ae7ecf",
   "lastOpenFiles": [
-    "linux/제어문.md",
-    "linux/apache.md",
+    "linux/isms.md",
+    "linux/rsyslog.md",
     "linux/disk.md",
     "linux/command.md",
-    "linux/isms.md",
-    "study/정처기/실기.md",
+    "linux/apache.md",
+    "linux/제어문.md",
     "git/git.md",
+    "study/정처기/실기.md",
     "git",
     "무제 파일.canvas",
     "Allow.md",

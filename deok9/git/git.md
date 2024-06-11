@@ -12,14 +12,6 @@ CPU : 2c
 RAM : 8g
 AWS EC2
 
-## install
-
--
-  ```
-  yum install git
-  ```
-
-
 ## config
 - global
 
@@ -48,7 +40,7 @@ AWS EC2
 		- init : Git 저장소를 **생성**하거나 기존 저장소를 **다시 초기화**하세요.
 		- remote add origin : 연결할(될) URL 주소 명시.
 
-## test
+## hands on
 - 업로드(push)
 
 	-
@@ -192,3 +184,11 @@ AWS EC2
 				  ```
 				  git pull https://github.com/wlsejrdyd/deok ./deok
 				  ```
+
+
+## install
+
+-
+  ```
+  yum install git
+  ```

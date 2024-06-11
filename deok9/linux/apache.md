@@ -22,10 +22,8 @@ mindmap-plugin: basic
 - 보안설정
 	- AllowOverride AuthConfig
 		- ${APACHE_PATH}/bin/htpasswd -c passfilename userid
-			- Sub title
-				- 첫 생성 시 -c 옵션을 추가해서 설정하며, 이후부터 -c 옵션은 해당 계정의 정보를 지운다
-			- Sub title
-				- passfilename 에 위치한 경로에 .htaccess 파일 잊지 말고 생성 해두기
+			- 첫 생성 시 -c 옵션을 추가해서 설정하며, 이후부터 -c 옵션은 해당 계정의 정보를 지운다
+			- passfilename 에 위치한 경로에 .htaccess 파일 잊지 말고 생성 해두기
 		- .htaccess
 
 			-
@@ -90,10 +88,8 @@ mindmap-plugin: basic
 		  </Files>
 		  ```
 
-			- Sub title
-				- files (확장자) 단위를 지정하며 ip 로 제어한다
-			- Sub title
-				- 다른 제시어로는 예를 들어 <Files ~ ".(htm|css|js|php)$"> 등으로 제어 할 수 있다
+			- files (확장자) 단위를 지정하며 ip 로 제어한다
+			- 다른 제시어로는 예를 들어 <Files ~ ".(htm|css|js|php)$"> 등으로 제어 할 수 있다
 	- directory control
 
 		-
@@ -115,10 +111,8 @@ mindmap-plugin: basic
 	  AddType application/x-httpd-php-source .phps
 	  ```
 
-		- Sub title
-			- index.html 이 표시가 안되고 계속 다운로드만 된다면 해당 옵션을 확인해볼 것
-		- Sub title
-			- AddType application/x-compress .Z 활성화되어있는지 확인
+		- index.html 이 표시가 안되고 계속 다운로드만 된다면 해당 옵션을 확인해볼 것
+		- AddType application/x-compress .Z 활성화되어있는지 확인
 - semaphore 설정
 
 	-

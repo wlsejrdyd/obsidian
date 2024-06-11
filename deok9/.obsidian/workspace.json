@@ -13,11 +13,22 @@
             "state": {
               "type": "mindmapView",
               "state": {
+                "file": "linux/apache.md"
+              }
+            }
+          },
+          {
+            "id": "9584c43d1d6dfb61",
+            "type": "leaf",
+            "state": {
+              "type": "mindmapView",
+              "state": {
                 "file": "linux/rsyslog.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -145,15 +156,15 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f533474278ae7ecf",
+  "active": "9584c43d1d6dfb61",
   "lastOpenFiles": [
+    "linux/disk.md",
     "linux/isms.md",
+    "linux/command.md",
+    "linux/제어문.md",
+    "linux/apache.md",
     "linux/rsyslog.md",
     "linux/로그서버 구축.md",
-    "linux/disk.md",
-    "linux/command.md",
-    "linux/apache.md",
-    "linux/제어문.md",
     "git/git.md",
     "study/정처기/실기.md",
     "git",

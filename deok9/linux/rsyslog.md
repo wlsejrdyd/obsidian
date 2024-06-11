@@ -81,6 +81,16 @@ mindmap-plugin: basic
 		  $InputRunFileMonitor
 		  ```
 
+- firewall
+	- Log Server
+
+		-
+		  ```
+		  firewall-cmd --permanent --add-port=514/tcp
+		  firewall-cmd --permanent --add-port=514/udp
+		  firewall-cmd --reload
+		  ```
+
 
 ## sftp log config
 - sshd_config
@@ -102,4 +112,38 @@ mindmap-plugin: basic
 
 ## command history log
 - cmd.sh
-- Sub title
+
+	-
+	  ```
+	  
+	  # CMD Log
+	  HISTTIMEFORMAT="%Y-%m-%d [%H:%M:%S] "
+	  export HISTTIMEFORMAT
+	  export MALLOC_CHECK_=0
+	  function history_to_syslog() {
+	  declare USERCMD
+	  USERCMD=$(fc -ln -0 2>/dev/null|sed 's/\t //')
+	  declare PP
+	  if [ "$USER" == "root" ]
+	  then
+	  PP="]#"
+	  else
+	  PP="]$"
+	  fi
+	  if [ "$USERCMD" != "$OLD_USERCMD" ]
+	  then
+	  if [ "$(echo $LANG)" == "C" ]
+	  then
+	  logger -p local4.notice -t bash -i "$USER$(who am i|awk '{print $6}'):$PWD$PP $USERCMD"
+	  else
+	  logger -p local4.notice -t bash -i "$USER$(who am i|awk '{print $5}'):$PWD$PP $USERCMD"
+	  fi
+	  fi
+	  OLD_USERCMD=$USERCMD
+	  unset USERCMD PP
+	  }
+	  trap 'history_to_syslog' DEBUG
+	  ```
+
+- rsyslog.conf
+	- local4.notice /var/log/cmd.log

@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "linux/기타.md"
+                "file": "linux/script.md"
               }
             }
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/기타.md",
+                "file": "linux/script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/기타.md",
+                "file": "linux/script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/기타.md"
+                "file": "linux/script.md"
               }
             }
           }
@@ -145,17 +145,19 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ee9ee50f0aed3f2e",
+  "active": "f533474278ae7ecf",
   "lastOpenFiles": [
-    "linux/apache.md",
-    "linux/기타.md",
-    "linux/command.md",
-    "linux/제어문.md",
-    "git/git.md",
-    "study/정처기/실기.md",
-    "linux/isms.md",
     "linux/rsyslog.md",
+    "linux/isms.md",
     "linux/disk.md",
+    "linux/command.md",
+    "linux/apache.md",
+    "linux/제어문.md",
+    "linux/기타.md",
+    "linux/script.md",
+    "study/정처기/실기.md",
+    "script",
+    "git/git.md",
     "linux/로그서버 구축.md",
     "git",
     "무제 파일.canvas",
@@ -171,7 +173,6 @@
     "Linux/apache/apache-config.md",
     "Welcome.md",
     "Linux/apache",
-    "Linux/apache-config",
-    "Project"
+    "Linux/apache-config"
   ]
 }

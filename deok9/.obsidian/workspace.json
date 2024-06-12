@@ -23,7 +23,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "linux/제어문.md"
+                "file": "study/정처기/실기.md"
               }
             }
           }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/제어문.md",
+                "file": "study/정처기/실기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/제어문.md",
+                "file": "study/정처기/실기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/제어문.md"
+                "file": "study/정처기/실기.md"
               }
             }
           }
@@ -156,13 +156,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "9584c43d1d6dfb61",
+  "active": "f533474278ae7ecf",
   "lastOpenFiles": [
+    "linux/제어문.md",
     "linux/apache.md",
     "linux/isms.md",
     "linux/rsyslog.md",
     "git/git.md",
-    "linux/제어문.md",
     "linux/command.md",
     "linux/disk.md",
     "linux/로그서버 구축.md",

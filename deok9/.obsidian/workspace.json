@@ -4,21 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8020408063539c37",
+        "id": "bdd9bc76be27c3b7",
         "type": "tabs",
         "children": [
           {
-            "id": "f871075394ea8363",
-            "type": "leaf",
-            "state": {
-              "type": "mindmapView",
-              "state": {
-                "file": "linux/apache.md"
-              }
-            }
-          },
-          {
-            "id": "9584c43d1d6dfb61",
+            "id": "ee9ee50f0aed3f2e",
             "type": "leaf",
             "state": {
               "type": "mindmapView",
@@ -27,8 +17,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -156,16 +145,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f533474278ae7ecf",
+  "active": "ee9ee50f0aed3f2e",
   "lastOpenFiles": [
-    "git/git.md",
-    "linux/기타.md",
-    "study/정처기/실기.md",
-    "linux/제어문.md",
     "linux/apache.md",
+    "linux/기타.md",
+    "linux/command.md",
+    "linux/제어문.md",
+    "git/git.md",
+    "study/정처기/실기.md",
     "linux/isms.md",
     "linux/rsyslog.md",
-    "linux/command.md",
     "linux/disk.md",
     "linux/로그서버 구축.md",
     "git",

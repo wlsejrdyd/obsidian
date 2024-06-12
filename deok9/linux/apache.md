@@ -78,7 +78,7 @@ mindmap-plugin: basic
 		  ```
 
 			- url path / 아래의 접근을 ip 로 제어함
-	- extension control
+	- file extension control
 
 		-
 		  ```

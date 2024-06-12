@@ -23,7 +23,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "linux/isms.md"
+                "file": "linux/제어문.md"
               }
             }
           }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/isms.md",
+                "file": "linux/제어문.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/isms.md",
+                "file": "linux/제어문.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/isms.md"
+                "file": "linux/제어문.md"
               }
             }
           }
@@ -158,13 +158,13 @@
   },
   "active": "9584c43d1d6dfb61",
   "lastOpenFiles": [
+    "linux/apache.md",
+    "linux/isms.md",
     "linux/rsyslog.md",
     "git/git.md",
     "linux/제어문.md",
     "linux/command.md",
-    "linux/apache.md",
     "linux/disk.md",
-    "linux/isms.md",
     "linux/로그서버 구축.md",
     "study/정처기/실기.md",
     "git",

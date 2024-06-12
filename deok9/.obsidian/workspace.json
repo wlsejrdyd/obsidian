@@ -23,7 +23,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "linux/rsyslog.md"
+                "file": "linux/disk.md"
               }
             }
           }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/rsyslog.md",
+                "file": "linux/disk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/rsyslog.md",
+                "file": "linux/disk.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/rsyslog.md"
+                "file": "linux/disk.md"
               }
             }
           }
@@ -158,12 +158,12 @@
   },
   "active": "9584c43d1d6dfb61",
   "lastOpenFiles": [
-    "linux/disk.md",
     "linux/isms.md",
+    "linux/rsyslog.md",
+    "linux/disk.md",
     "linux/command.md",
     "linux/제어문.md",
     "linux/apache.md",
-    "linux/rsyslog.md",
     "linux/로그서버 구축.md",
     "git/git.md",
     "study/정처기/실기.md",

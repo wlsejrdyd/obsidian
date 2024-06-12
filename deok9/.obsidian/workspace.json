@@ -145,16 +145,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f533474278ae7ecf",
+  "active": "ee9ee50f0aed3f2e",
   "lastOpenFiles": [
     "linux/rsyslog.md",
+    "linux/script.md",
     "linux/isms.md",
     "linux/disk.md",
     "linux/command.md",
     "linux/apache.md",
     "linux/제어문.md",
     "linux/기타.md",
-    "linux/script.md",
     "study/정처기/실기.md",
     "script",
     "git/git.md",

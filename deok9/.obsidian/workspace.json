@@ -13,11 +13,12 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "linux/기타.md"
+                "file": "study/정처기/실기.md"
               }
             }
           }
-        ]
+        ],
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -41,6 +42,20 @@
             }
           },
           {
+            "id": "d4658ef91a3903e2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "f38e5cfc05d3abdc",
+        "type": "tabs",
+        "children": [
+          {
             "id": "1a002894b61f44e5",
             "type": "leaf",
             "state": {
@@ -53,14 +68,6 @@
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
-            }
-          },
-          {
-            "id": "d4658ef91a3903e2",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {}
             }
           }
         ]
@@ -83,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/기타.md",
+                "file": "study/정처기/실기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/기타.md",
+                "file": "study/정처기/실기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/기타.md"
+                "file": "study/정처기/실기.md"
               }
             }
           }
@@ -144,20 +151,20 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "84c63278539c16e9",
+  "active": "ee9ee50f0aed3f2e",
   "lastOpenFiles": [
-    "linux/제어문.md",
-    "linux/apache.md",
-    "linux/command.md",
-    "linux/disk.md",
     "linux/isms.md",
     "linux/rsyslog.md",
+    "git/git.md",
+    "linux/기타.md",
+    "linux/apache.md",
+    "linux/제어문.md",
+    "linux/command.md",
+    "linux/disk.md",
     "dump.sh.md",
     "script/script.md",
-    "linux/기타.md",
     "study/정처기/실기.md",
     "script",
-    "git/git.md",
     "linux/로그서버 구축.md",
     "git",
     "무제 파일.canvas",

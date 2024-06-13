@@ -128,12 +128,11 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 226.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -145,7 +144,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ee9ee50f0aed3f2e",
+  "active": "84c63278539c16e9",
   "lastOpenFiles": [
     "linux/제어문.md",
     "linux/apache.md",

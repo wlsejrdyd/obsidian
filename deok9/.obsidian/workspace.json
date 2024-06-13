@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "linux/script.md"
+                "file": "linux/rsyslog.md"
               }
             }
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/script.md",
+                "file": "linux/rsyslog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/script.md",
+                "file": "linux/rsyslog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/script.md"
+                "file": "linux/rsyslog.md"
               }
             }
           }
@@ -145,10 +145,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ee9ee50f0aed3f2e",
+  "active": "f533474278ae7ecf",
   "lastOpenFiles": [
+    "script/script.md",
     "linux/rsyslog.md",
-    "linux/script.md",
     "linux/isms.md",
     "linux/disk.md",
     "linux/command.md",

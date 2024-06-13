@@ -145,10 +145,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f533474278ae7ecf",
+  "active": "ee9ee50f0aed3f2e",
   "lastOpenFiles": [
-    "script/script.md",
+    "dump.sh.md",
     "linux/rsyslog.md",
+    "script/script.md",
     "linux/isms.md",
     "linux/disk.md",
     "linux/command.md",

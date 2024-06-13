@@ -121,18 +121,3 @@ mindmap-plugin: basic
 	  ```
 
 		- 접속자 수 증가로 웹 서버 부하가 발생하면 느려지거나 증상 없이 간혈적으로 멈추곤 할 때 설정을 임시적으로 변경하여 완화 할 수 있다
-
-## error
-- 403 error
-
-	-
-	  ```
-	  <Directory />
-	  ~
-	  ~
-	  ~
-	  Order allow,deny
-	  Allow from all
-	  Require all granted
-	  </Directory>
-	  ```

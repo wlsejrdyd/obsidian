@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "study/정처기/실기.md"
+                "file": "linux/apache.md"
               }
             }
           }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/정처기/실기.md",
+                "file": "linux/apache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/정처기/실기.md",
+                "file": "linux/apache.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/정처기/실기.md"
+                "file": "linux/apache.md"
               }
             }
           }
@@ -153,6 +153,7 @@
   },
   "active": "ee9ee50f0aed3f2e",
   "lastOpenFiles": [
+    "study/정처기/실기.md",
     "linux/isms.md",
     "linux/rsyslog.md",
     "git/git.md",
@@ -163,7 +164,6 @@
     "linux/disk.md",
     "dump.sh.md",
     "script/script.md",
-    "study/정처기/실기.md",
     "script",
     "linux/로그서버 구축.md",
     "git",

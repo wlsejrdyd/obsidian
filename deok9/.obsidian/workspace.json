@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "study/정처기/오답노트.md"
+                "file": "study/정처기/두음암기.md"
               }
             }
           }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/정처기/오답노트.md",
+                "file": "study/정처기/두음암기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/정처기/오답노트.md",
+                "file": "study/정처기/두음암기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/정처기/오답노트.md"
+                "file": "study/정처기/두음암기.md"
               }
             }
           }
@@ -151,8 +151,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f533474278ae7ecf",
+  "active": "ee9ee50f0aed3f2e",
   "lastOpenFiles": [
+    "study/정처기/실기.md",
     "study/정처기/두음암기.md",
     "study/정처기/오답노트.md",
     "linux/기타.md",
@@ -163,7 +164,6 @@
     "linux/disk.md",
     "linux/isms.md",
     "linux/rsyslog.md",
-    "study/정처기/실기.md",
     "study/무제 파일.md",
     "dump.sh.md",
     "script/script.md",

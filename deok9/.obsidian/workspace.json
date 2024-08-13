@@ -13,11 +13,22 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "study/정처기/실기.md"
+                "file": "linux/disk.md"
+              }
+            }
+          },
+          {
+            "id": "c295c76c875a1b82",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
               }
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -90,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/정처기/실기.md",
+                "file": "linux/disk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/정처기/실기.md",
+                "file": "linux/disk.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/정처기/실기.md"
+                "file": "linux/disk.md"
               }
             }
           }
@@ -151,10 +162,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ee9ee50f0aed3f2e",
+  "active": "c295c76c875a1b82",
   "lastOpenFiles": [
-    "linux/apache.md",
     "study/정처기/실기.md",
+    "linux/apache.md",
     "linux/isms.md",
     "linux/rsyslog.md",
     "git/git.md",

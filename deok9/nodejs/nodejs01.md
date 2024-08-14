@@ -17,7 +17,6 @@ mindmap-plugin: basic
 
 	-
 	  ```
-	  
 	  const express = require('express');
 	  const app = express();
 	  const port = 3000;
@@ -47,12 +46,12 @@ mindmap-plugin: basic
 	  
 	  //// API 엔드포인트 - 제품 정보 제공
 	  //app.get('/api/product', (req, res) => {
-	  //  // 임의의 제품 데이터를 생성하여 반환
-	  //  const productData = {
-	  //    name: 'Sample Product',
-	  //    price: '$19.99'
-	  //  };
-	  //  res.json(productData);
+	  // // 임의의 제품 데이터를 생성하여 반환
+	  // const productData = {
+	  // name: 'Sample Product',
+	  // price: '$19.99'
+	  // };
+	  // res.json(productData);
 	  //});
 	  
 	  
@@ -100,7 +99,6 @@ mindmap-plugin: basic
 
 			-
 			  ```
-			  
 			  <!DOCTYPE html>
 			  <html>
 			  <head>
@@ -145,7 +143,6 @@ mindmap-plugin: basic
 
 			-
 			  ```
-			  
 			  <!DOCTYPE html>
 			  <html lang="en">
 			  <head>

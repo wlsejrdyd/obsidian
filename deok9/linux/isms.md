@@ -101,7 +101,7 @@ ntp:x:38:38::/etc/ntp:/sbin/nologin
 
 	-
 	  ```
-	  password  requisite  pam_pwquality.so enforce_for_root
+	  password requisite pam_pwquality.so enforce_for_root
 	  ```
 
 
@@ -122,7 +122,6 @@ ntp:x:38:38::/etc/ntp:/sbin/nologin
 
 			-
 			  ```
-			  
 			  Banner /etc/issue
 			  Banner /etc/issue.net
 			  ```
@@ -133,8 +132,7 @@ ntp:x:38:38::/etc/ntp:/sbin/nologin
 
 	-
 	  ```
-	  
-	  auth  [default=die]  pam_faillock.so authfail audit deny=3 unlock_time=600
+	  auth [default=die] pam_faillock.so authfail audit deny=3 unlock_time=600
 	  account required pam_faillock.so
 	  ```
 

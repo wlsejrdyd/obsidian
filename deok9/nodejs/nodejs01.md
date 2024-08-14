@@ -252,4 +252,37 @@ mindmap-plugin: basic
 	  kubectl expose deployment node01-deploy --name=node01-svc --type=NodePort --port=3000 --target-port=3000
 	  ```
 
-	- Sub title
+
+	-
+	  ```
+	  apiVersion: v1
+	  kind: Service
+	  metadata:
+	  creationTimestamp: "2024-08-14T05:01:30Z"
+	  labels:
+	  app: node01-deploy
+	  name: node01-svc
+	  namespace: default
+	  resourceVersion: "105052"
+	  uid: e2afb67b-ad0f-40ac-a2de-088ec3efc283
+	  spec:
+	  clusterIP: 10.108.103.159
+	  clusterIPs:
+	  - 10.108.103.159
+	  externalTrafficPolicy: Cluster
+	  internalTrafficPolicy: Cluster
+	  ipFamilies:
+	  - IPv4
+	  ipFamilyPolicy: SingleStack
+	  ports:
+	  - nodePort: 32196
+	  port: 3000
+	  protocol: TCP
+	  targetPort: 3000
+	  selector:
+	  app: node01-deploy
+	  sessionAffinity: None
+	  type: NodePort
+	  status:
+	  loadBalancer: {}
+	  ```

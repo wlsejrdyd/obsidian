@@ -74,3 +74,110 @@ mindmap-plugin: basic
 	  ```
 
 		- home.html
+
+			-
+			  ```
+			  <!DOCTYPE html>
+			  <html>
+			  <head>
+			  <title>Home Page</title>
+			  </head>
+			  <body>
+			  <h1>Welcome to Our Website</h1>
+			  <nav>
+			  <ul>
+			  <li><a href="/">Home</a></li>
+			  <li><a href="/about">About Us</a></li>
+			  <li><a href="/product">Our Products</a></li>
+			  </ul>
+			  </nav>
+			  <p>This is the Home page. Explore our website to learn more about us!</p>
+			  </body>
+			  </html>
+			  ```
+
+		- about.html
+
+			-
+			  ```
+			  
+			  <!DOCTYPE html>
+			  <html>
+			  <head>
+			  <title>Home Page</title>
+			  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			  
+			  
+			  </head>
+			  
+			  
+			  <script>
+			  $(document).ready(function() {
+			  $("#showPopup").click(function() {
+			  $("#popup").show();
+			  });
+			  
+			  
+			  $("#closePopup").click(function() {
+			  $("#popup").hide();
+			  });
+			  });
+			  </script>
+			  
+			  
+			  
+			  
+			  <body>
+			  <h1>Welcome to Our Website</h1>
+			  <p>This is the Home page. Explore our website to learn more about us!</p>
+			  <button id="showPopup">Show Popup</button>
+			  <div id="popup" style="display:none; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: white; border: 2px solid #000; z-index: 1000;">
+			  <p>This is a popup!</p>
+			  <button id="closePopup">Close</button>
+			  </div>
+			  
+			  
+			  </body>
+			  </html>
+			  ```
+
+		- product.html
+
+			-
+			  ```
+			  
+			  <!DOCTYPE html>
+			  <html lang="en">
+			  <head>
+			  <meta charset="UTF-8">
+			  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			  <title>Product</title>
+			  <script>
+			  // 5초마다 페이지 새로고침
+			  setTimeout(() => {
+			  window.location.reload();
+			  }, 5000);
+			  
+			  
+			  // 스크립트로 서버에서 시간을 가져와서 출력하는 함수
+			  function loadTime() {
+			  fetch('/api/time')
+			  .then(response => response.json())
+			  .then(data => {
+			  document.getElementById('current-time').innerText = `Current Time: ${data.currentTime}`;
+			  })
+			  .catch(error => console.error('Error:', error));
+			  }
+			  
+			  
+			  window.onload = loadTime;
+			  </script>
+			  </head>
+			  <body>
+			  <h1>Current Server Time</h1>
+			  <div id="current-time">Loading...</div>
+			  <a href="/">Home</a>
+			  <a href="/about">About</a>
+			  </body>
+			  </html>
+			  ```

@@ -10,7 +10,8 @@ mindmap-plugin: basic
 - v16.20.2
 
 ## 목적
-- nodejs 공부 및 exec 함수를 통한 서버 스크립트 결과 값 출력
+- v1 : nodejs 공부 및 exec 함수를 통한 서버 스크립트 결과 값 출력
+v2 : wget 에서 각자 다른 서버에서 웹서버로 데이터 전송하는 기능을 추가하고, shell script 업로드 할 수 있는 페이지를 새로 만듦.
 
 ## v1
 - index.js
@@ -207,82 +208,163 @@ mindmap-plugin: basic
 
 
 ## kubernetes
-- deployment yaml
+- Sub title
+	- deployment yaml
+
+		-
+		  ```
+		  kubectl create deployment node01-deploy --image=localhost/node01:latest --replicas=2 --dry-run=client -o yaml > node01.yaml
+		  ```
+
+- Sub title
+	- service
+
+		-
+		  ```
+		  kubectl expose deployment node01-deploy --name=node01-svc --type=NodePort --port=3000 --target-port=3000
+		  ```
+
+
+## v2
+- isnta.js
 
 	-
 	  ```
-	  kubectl create deployment node01-deploy --image=localhost/node01:latest --replicas=2 --dry-run=client -o yaml > node01.yaml
-	  ```
-
-
-	-
-	  ```
+	  const express = require('express');
+	  const app = express();
+	  const multer = require('multer');
+	  const path = require('path');
+	  const port = 80;
+	  const { exec } = require('child_process');
 	  
-	  apiVersion: apps/v1
-	  kind: Deployment
-	  metadata:
-	  creationTimestamp: null
-	  labels:
-	  app: node01-deploy
-	  name: node01-deploy
-	  spec:
-	  replicas: 2
-	  selector:
-	  matchLabels:
-	  app: node01-deploy
-	  strategy: {}
-	  template:
-	  metadata:
-	  creationTimestamp: null
-	  labels:
-	  app: node01-deploy
-	  spec:
-	  containers:
-	  - image: localhost/node01:latest
-	  imagePullPolicy: Never
-	  name: node01
-	  resources: {}
-	  status: {}
+	  
+	  app.use(express.static('public'));
+	  
+	  
+	  // Multer 설정: 파일을 저장할 위치와 파일명 지정
+	  const storage = multer.diskStorage({
+	  destination: function (req, file, cb) {
+	  cb(null, 'uploads/'); // 업로드된 파일을 저장할 폴더
+	  },
+	  filename: function (req, file, cb) {
+	  cb(null, file.originalname); // 원래 파일명을 사용하여 저장
+	  }
+	  });
+	  
+	  
+	  const upload = multer({ storage: storage });
+	  
+	  
+	  // 서버별 데이터를 저장할 객체
+	  let serverData = {};
+	  
+	  
+	  // Home 페이지 라우트
+	  app.get('/', (req, res) => {
+	  res.sendFile(__dirname + '/public/home.html');
+	  });
+	  
+	  
+	  // Product 페이지 라우트
+	  app.get('/product', (req, res) => {
+	  res.sendFile(__dirname + '/public/product.html');
+	  });
+	  
+	  
+	  // 파일 업로드를 위한 HTML 폼을 제공하는 라우트
+	  app.get('/upload', (req, res) => {
+	  res.send(`
+	  <html>
+	  <body>
+	  <h1>Upload Shell Script</h1>
+	  <form action="/upload" method="POST" enctype="multipart/form-data">
+	  <input type="file" name="scriptFile" accept=".sh" />
+	  <button type="submit">Upload</button>
+	  </form>
+	  </body>
+	  </html>
+	  `);
+	  });
+	  
+	  
+	  // 파일 업로드를 처리하는 라우트
+	  app.post('/upload', upload.single('scriptFile'), (req, res) => {
+	  if (req.file) {
+	  res.send(`File uploaded successfully: ${req.file.originalname}`);
+	  } else {
+	  res.status(400).send('No file uploaded.');
+	  }
+	  });
+	  
+	  
+	  // 업로드된 파일을 서빙하기 위한 정적 파일 제공
+	  app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+	  
+	  
+	  // Update 데이터 저장 라우트
+	  app.get('/update', (req, res) => {
+	  const serverId = req.query.id;  // 서버 식별자
+	  const data = req.query.data;    // 전송된 데이터
+	  
+	  
+	  if (serverId && data) {
+	  // 서버 ID에 해당하는 데이터 저장
+	  serverData[serverId] = data;
+	  console.log(`Data received from server ${serverId}: ${data}`);
+	  res.send(`Data from server ${serverId} has been updated.`);
+	  } else {
+	  res.status(400).send('Missing server ID or data.');
+	  }
+	  });
+	  
+	  
+	  // 모든 서버의 데이터를 출력하는 라우트
+	  app.get('/display', (req, res) => {
+	  // 저장된 데이터를 출력하는 HTML 페이지 반환
+	  let html = `
+	  <html>
+	  <head>
+	  <meta http-equiv="refresh" content="5"> <!-- 5초마다 페이지 새로고침 -->
+	  </head>
+	  <body>
+	  <h1>Server Data</h1>
+	  `;
+	  
+	  
+	  // 서버별 데이터 출력
+	  for (const [serverId, data] of Object.entries(serverData)) {
+	  html += `
+	  <h2>Server ID: ${serverId}</h2>
+	  <pre>${data}</pre>
+	  `;
+	  }
+	  
+	  
+	  html += `
+	  </body>
+	  </html>
+	  `;
+	  
+	  
+	  res.send(html);
+	  });
+	  
+	  
+	  // API 엔드포인트 - 쉘 스크립트를 실행하여 현재 시간 제공
+	  app.get('/api/time', (req, res) => {
+	  exec('./get_time.sh', (error, stdout, stderr) => {
+	  if (error) {
+	  console.error(`exec error: ${error}`);
+	  return res.status(500).send('Server error');
+	  }
+	  res.json({ currentTime: stdout.trim() });
+	  });
+	  });
+	  
+	  
+	  app.listen(port, () => {
+	  console.log(`Example app listening at http://localhost:${port}`);
+	  });
 	  ```
 
-- service
-
-	-
-	  ```
-	  kubectl expose deployment node01-deploy --name=node01-svc --type=NodePort --port=3000 --target-port=3000
-	  ```
-
-
-	-
-	  ```
-	  apiVersion: v1
-	  kind: Service
-	  metadata:
-	  creationTimestamp: "2024-08-14T05:01:30Z"
-	  labels:
-	  app: node01-deploy
-	  name: node01-svc
-	  namespace: default
-	  resourceVersion: "105052"
-	  uid: e2afb67b-ad0f-40ac-a2de-088ec3efc283
-	  spec:
-	  clusterIP: 10.108.103.159
-	  clusterIPs:
-	  - 10.108.103.159
-	  externalTrafficPolicy: Cluster
-	  internalTrafficPolicy: Cluster
-	  ipFamilies:
-	  - IPv4
-	  ipFamilyPolicy: SingleStack
-	  ports:
-	  - nodePort: 32196
-	  port: 3000
-	  protocol: TCP
-	  targetPort: 3000
-	  selector:
-	  app: node01-deploy
-	  sessionAffinity: None
-	  type: NodePort
-	  status:
-	  loadBalancer: {}
-	  ```
+		- pre 태그를 사용해서 문자 그대로 가져오게 함. (p 태그에서 변경.)

@@ -211,6 +211,12 @@ mindmap-plugin: basic
 
 	-
 	  ```
+	  kubectl create deployment node01-deploy --image=localhost/node01:latest --replicas=2 --dry-run=client -o yaml > node01.yaml
+	  ```
+
+
+	-
+	  ```
 	  
 	  apiVersion: apps/v1
 	  kind: Deployment
@@ -238,3 +244,12 @@ mindmap-plugin: basic
 	  resources: {}
 	  status: {}
 	  ```
+
+- service
+
+	-
+	  ```
+	  kubectl expose deployment node01-deploy --name=node01-svc --type=NodePort --port=3000 --target-port=3000
+	  ```
+
+	- Sub title

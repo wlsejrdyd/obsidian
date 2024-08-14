@@ -11,7 +11,7 @@ mindmap-plugin: basic
 
 ## 목적
 - v1 : nodejs 공부 및 exec 함수를 통한 서버 스크립트 결과 값 출력
-v2 : wget 에서 각자 다른 서버에서 웹서버로 데이터 전송하는 기능을 추가하고, shell script 업로드 할 수 있는 페이지를 새로 만듦.
+v2 : wget 에서 각자 다른 서버에서 웹서버로 데이터 전송하는 기능을 추가하고, shell script 업로드 할 수 있는 페이지를 새로 만들고 /upload 페이지에서 업로드 된 파일 리스트 출력 할 수 있는 /files 페이지를 만듦
 
 ## v1
 - index.js
@@ -234,6 +234,7 @@ v2 : wget 에서 각자 다른 서버에서 웹서버로 데이터 전송하는 
 	  const app = express();
 	  const multer = require('multer');
 	  const path = require('path');
+	  const fs = require('fs');
 	  const port = 80;
 	  const { exec } = require('child_process');
 	  
@@ -281,6 +282,8 @@ v2 : wget 에서 각자 다른 서버에서 웹서버로 데이터 전송하는 
 	  <input type="file" name="scriptFile" accept=".sh" />
 	  <button type="submit">Upload</button>
 	  </form>
+	  <br>
+	  <a href="/files">View Uploaded Files</a>
 	  </body>
 	  </html>
 	  `);
@@ -290,10 +293,33 @@ v2 : wget 에서 각자 다른 서버에서 웹서버로 데이터 전송하는 
 	  // 파일 업로드를 처리하는 라우트
 	  app.post('/upload', upload.single('scriptFile'), (req, res) => {
 	  if (req.file) {
-	  res.send(`File uploaded successfully: ${req.file.originalname}`);
+	  res.send(`File uploaded successfully: ${req.file.originalname} <br><a href="/files">View Uploaded Files</a>`);
 	  } else {
 	  res.status(400).send('No file uploaded.');
 	  }
+	  });
+	  
+	  
+	  // 업로드된 파일 목록을 보여주는 라우트
+	  app.get('/files', (req, res) => {
+	  const directoryPath = path.join(__dirname, 'uploads');
+	  
+	  
+	  // 디렉토리에서 파일 목록을 읽음
+	  fs.readdir(directoryPath, (err, files) => {
+	  if (err) {
+	  return res.status(500).send('Unable to scan files: ' + err);
+	  }
+	  
+	  
+	  // 파일 목록을 HTML로 반환
+	  let fileList = '<h1>Uploaded Files</h1><ul>';
+	  files.forEach((file) => {
+	  fileList += `<li><a href="/uploads/${file}" target="_blank">${file}</a></li>`;
+	  });
+	  fileList += '</ul><br><a href="/upload">Upload More Files</a>';
+	  res.send(fileList);
+	  });
 	  });
 	  
 	  

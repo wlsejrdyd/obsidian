@@ -21,14 +21,36 @@
             "id": "c295c76c875a1b82",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "mindmapView",
               "state": {
-                "currentVersion": "1.6.7"
+                "file": "linux/기타.md"
+              }
+            }
+          },
+          {
+            "id": "899b085a9a4743cd",
+            "type": "leaf",
+            "state": {
+              "type": "mindmapView",
+              "state": {
+                "file": "linux/기타.md"
+              }
+            }
+          },
+          {
+            "id": "5c2a8643a96e41c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 1,
+        "currentTab": 3,
         "stacked": true
       }
     ],
@@ -101,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/disk.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/disk.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/disk.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -162,14 +184,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "c295c76c875a1b82",
+  "active": "5c2a8643a96e41c4",
   "lastOpenFiles": [
+    "linux/기타.md",
+    "conflict-files-obsidian-git.md",
+    "study/정처기/두음암기.md",
     "study/정처기/실기.md",
     "linux/apache.md",
     "linux/isms.md",
     "linux/rsyslog.md",
     "git/git.md",
-    "linux/기타.md",
     "linux/제어문.md",
     "linux/command.md",
     "linux/disk.md",

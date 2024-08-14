@@ -178,3 +178,63 @@ mindmap-plugin: basic
 			  </body>
 			  </html>
 			  ```
+
+
+## Dockerfile
+
+-
+  ```
+  FROM node
+  
+  
+  WORKDIR /app/node01
+  
+  
+  COPY package.json .
+  
+  
+  RUN npm install
+  
+  
+  COPY . .
+  
+  
+  EXPOSE 3000
+  
+  
+  CMD [ "node", "index.js" ]
+  ```
+
+
+## kubernetes
+- deployment yaml
+
+	-
+	  ```
+	  
+	  apiVersion: apps/v1
+	  kind: Deployment
+	  metadata:
+	  creationTimestamp: null
+	  labels:
+	  app: node01-deploy
+	  name: node01-deploy
+	  spec:
+	  replicas: 2
+	  selector:
+	  matchLabels:
+	  app: node01-deploy
+	  strategy: {}
+	  template:
+	  metadata:
+	  creationTimestamp: null
+	  labels:
+	  app: node01-deploy
+	  spec:
+	  containers:
+	  - image: localhost/node01:latest
+	  imagePullPolicy: Never
+	  name: node01
+	  resources: {}
+	  status: {}
+	  ```

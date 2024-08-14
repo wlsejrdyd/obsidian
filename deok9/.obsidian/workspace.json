@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "git/git.md"
+                "file": "nodejs/nodejs01.md"
               }
             }
           }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git/git.md",
+                "file": "nodejs/nodejs01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "git/git.md",
+                "file": "nodejs/nodejs01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git/git.md"
+                "file": "nodejs/nodejs01.md"
               }
             }
           }
@@ -153,6 +153,7 @@
   },
   "active": "ee9ee50f0aed3f2e",
   "lastOpenFiles": [
+    "git/git.md",
     "nodejs/nodejs01.md",
     "script/Untitled mindmap.md",
     "linux/기타.md",
@@ -164,7 +165,6 @@
     "linux/disk.md",
     "linux/command.md",
     "linux/apache.md",
-    "git/git.md",
     "linux/제어문.md",
     "conflict-files-obsidian-git.md",
     "dump.sh.md",

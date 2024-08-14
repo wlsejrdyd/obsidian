@@ -9,9 +9,9 @@ mindmap-plugin: basic
 ## version
 - v16.20.2
 
-## 목적
+## 히스토리
 - v1 : nodejs 공부 및 exec 함수를 통한 서버 스크립트 결과 값 출력
-v2 : wget 에서 각자 다른 서버에서 웹서버로 데이터 전송하는 기능을 추가하고, shell script 업로드 할 수 있는 페이지를 새로 만들고 /upload 페이지에서 업로드 된 파일 리스트 출력 할 수 있는 /files 페이지를 만듦
+- v2 : wget 에서 각자 다른 서버에서 웹서버로 데이터 전송하는 기능을 추가하고, shell script 업로드 할 수 있는 페이지를 새로 만들고 /upload 페이지에서 업로드 된 파일 리스트 출력 할 수 있는 /files 페이지를 만듦
 
 ## v1
 - index.js
@@ -329,8 +329,8 @@ v2 : wget 에서 각자 다른 서버에서 웹서버로 데이터 전송하는 
 	  
 	  // Update 데이터 저장 라우트
 	  app.get('/update', (req, res) => {
-	  const serverId = req.query.id;  // 서버 식별자
-	  const data = req.query.data;    // 전송된 데이터
+	  const serverId = req.query.id;  // 서버 식별자
+	  const data = req.query.data;    // 전송된 데이터
 	  
 	  
 	  if (serverId && data) {

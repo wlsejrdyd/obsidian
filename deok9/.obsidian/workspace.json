@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "linux/기타.md"
+                "file": "linux/isms.md"
               }
             }
           }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/기타.md",
+                "file": "linux/isms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/기타.md",
+                "file": "linux/isms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/기타.md"
+                "file": "linux/isms.md"
               }
             }
           }
@@ -153,19 +153,19 @@
   },
   "active": "ee9ee50f0aed3f2e",
   "lastOpenFiles": [
+    "linux/disk.md",
+    "linux/command.md",
+    "linux/apache.md",
+    "linux/제어문.md",
+    "linux/기타.md",
     "nodejs/nodejs01.md",
     "git/git.md",
     "script/Untitled mindmap.md",
-    "linux/기타.md",
     "linux/rsyslog.md",
     "nodejs",
     "study/정처기/두음암기.md",
     "study/정처기/실기.md",
     "linux/isms.md",
-    "linux/disk.md",
-    "linux/command.md",
-    "linux/apache.md",
-    "linux/제어문.md",
     "conflict-files-obsidian-git.md",
     "dump.sh.md",
     "script/script.md",

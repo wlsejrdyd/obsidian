@@ -90,7 +90,6 @@ ntp:x:38:38::/etc/ntp:/sbin/nologin
 
 	-
 	  ```
-	  
 	  minlen = 9
 	  dcredit = -1
 	  ucredit = -1
@@ -110,7 +109,6 @@ ntp:x:38:38::/etc/ntp:/sbin/nologin
 
 -
   ```
-  
   ####################################################
   Attention: This system is being monitored.
   Illegal access may result in legal penalties.

@@ -25,7 +25,6 @@ mindmap-plugin: basic
 
 	-
 	  ```
-	  
 	  screen -S jdy
 	  rsync -avz /data1/* /data2/
 	  ```
@@ -60,7 +59,7 @@ mindmap-plugin: basic
 	  ps -ef | sort -k4
 	  ```
 
-		- - ps -ef 4번째 열의 값으로 정렬 한다
+		- ps -ef 4번째 열의 값으로 정렬 한다
 
 ## awk
 
@@ -72,4 +71,4 @@ mindmap-plugin: basic
 	  sed -n '13p' test.txt
 	  ```
 
-		- - test.txt 파일의 13번째 줄을 출력 한다
+		- test.txt 파일의 13번째 줄을 출력 한다

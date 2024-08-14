@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "study/정처기/두음암기.md"
+                "file": "nodejs/nodejs01.md"
               }
             }
           },
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/정처기/두음암기.md",
+                "file": "nodejs/nodejs01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/정처기/두음암기.md",
+                "file": "nodejs/nodejs01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/정처기/두음암기.md"
+                "file": "nodejs/nodejs01.md"
               }
             }
           }
@@ -164,18 +164,20 @@
   },
   "active": "8d632501b25a20e4",
   "lastOpenFiles": [
-    "study/정처기/실기.md",
-    "study/정처기/두음암기.md",
-    "study/정처기/오답노트.md",
-    "linux/기타.md",
     "git/git.md",
-    "linux/제어문.md",
-    "linux/apache.md",
-    "linux/command.md",
-    "linux/disk.md",
+    "nodejs/nodejs01.md",
     "linux/isms.md",
     "linux/rsyslog.md",
-    "study/무제 파일.md",
+    "linux/disk.md",
+    "linux/command.md",
+    "linux/apache.md",
+    "linux/제어문.md",
+    "linux/기타.md",
+    "script/Untitled mindmap.md",
+    "nodejs",
+    "study/정처기/두음암기.md",
+    "study/정처기/실기.md",
+    "conflict-files-obsidian-git.md",
     "dump.sh.md",
     "script/script.md",
     "script",
@@ -193,7 +195,6 @@
     "linux",
     "Linux/apache/apache-config.md",
     "Welcome.md",
-    "Linux/apache",
-    "Linux/apache-config"
+    "Linux/apache"
   ]
 }

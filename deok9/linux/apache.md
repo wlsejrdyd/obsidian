@@ -11,7 +11,6 @@ mindmap-plugin: basic
 
 	-
 	  ```
-	  
 	  <VirtualHost *:80>
 	  ServerName www.deok.kr
 	  Redirect / https://www2.deok.kr
@@ -28,7 +27,6 @@ mindmap-plugin: basic
 
 			-
 			  ```
-			  
 			  AuthType Digest
 			  AuthName "DY.JIN PAGE, Get out now!"
 			  AuthUserFile /devp/app/apache/htdocs/deokpass
@@ -45,7 +43,6 @@ mindmap-plugin: basic
 
 		-
 		  ```
-		  
 		  <VirtualHost *:80>
 		  DocumentRoot /home/source/public_html
 		  ServerName x.x.x.x
@@ -61,7 +58,6 @@ mindmap-plugin: basic
 
 		-
 		  ```
-		  
 		  RewriteEngine On
 		  RewriteCond %{HTTPS} !=on
 		  RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R,L]
@@ -94,8 +90,7 @@ mindmap-plugin: basic
 
 		-
 		  ```
-		  
-		  <Location  /aaa/bbb>
+		  <Location /aaa/bbb>
 		  Require all denied
 		  Require ip x.x.x.x
 		  </Location>
@@ -106,7 +101,6 @@ mindmap-plugin: basic
 
 	-
 	  ```
-	  
 	  AddType application/x-httpd-php .php4 .php .html .htm .inc
 	  AddType application/x-httpd-php-source .phps
 	  ```

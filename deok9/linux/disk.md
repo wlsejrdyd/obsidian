@@ -12,7 +12,6 @@ mindmap-plugin: basic
 
 		-
 		  ```
-		  
 		  time dd if=/dev/zero of=/var/test bs=8k count=1000000
 		  ```
 
@@ -26,7 +25,6 @@ mindmap-plugin: basic
 
 		-
 		  ```
-		  
 		  time dd if=/var/test of=/dev/null bs=8k count=1000000
 		  ```
 
@@ -40,7 +38,6 @@ mindmap-plugin: basic
 
 		-
 		  ```
-		  
 		  time dd if=/var/test of=/tmp/test bs=8k count=1000000
 		  ```
 
@@ -56,7 +53,6 @@ mindmap-plugin: basic
 
 	-
 	  ```
-	  
 	  parted /dev/sdc1 resizepart [start] [end]
 	  ```
 
@@ -66,7 +62,6 @@ mindmap-plugin: basic
 
 	-
 	  ```
-	  
 	  lvmextend -L+1G /dev/vo/lvdata
 	  ```
 

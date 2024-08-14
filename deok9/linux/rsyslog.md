@@ -16,7 +16,6 @@ mindmap-plugin: basic
 
 		-
 		  ```
-		  
 		  $ModLoad imuxsock # provides support for local system logging (e.g. via logger command)
 		  $ModLoad imjournal # provides access to the systemd journal
 		  $ModLoad imudp
@@ -44,7 +43,6 @@ mindmap-plugin: basic
 
 		-
 		  ```
-		  
 		  $ModLoad imuxsock # provides support for local system logging (e.g. via logger command)
 		  $ModLoad imjournal # provides access to the systemd journal
 		  $ModLoad imfile
@@ -72,7 +70,6 @@ mindmap-plugin: basic
 
 		-
 		  ```
-		  
 		  $InputFileName /var/log/{cmd.log,secure,messages}
 		  $InputFileTag cmd-:
 		  $InputFileStateFile stat-file1
@@ -98,7 +95,7 @@ mindmap-plugin: basic
 	-
 	  ```
 	  
-	  Subsystem      sftp     /usr/libexec/openssh/sftp-server -f local2 -l INFO
+	  Subsystem      sftp     /usr/libexec/openssh/sftp-server -f local2 -l INFO
 	  ```
 
 - rsyslog.conf
@@ -115,7 +112,6 @@ mindmap-plugin: basic
 
 	-
 	  ```
-	  
 	  # CMD Log
 	  HISTTIMEFORMAT="%Y-%m-%d [%H:%M:%S] "
 	  export HISTTIMEFORMAT

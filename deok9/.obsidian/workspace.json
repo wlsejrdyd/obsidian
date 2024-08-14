@@ -16,8 +16,19 @@
                 "file": "study/정처기/두음암기.md"
               }
             }
+          },
+          {
+            "id": "8d632501b25a20e4",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.5"
+              }
+            }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -151,7 +162,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ee9ee50f0aed3f2e",
+  "active": "8d632501b25a20e4",
   "lastOpenFiles": [
     "study/정처기/실기.md",
     "study/정처기/두음암기.md",

@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "linux/rsyslog.md"
+                "file": "git/git.md"
               }
             }
           }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/rsyslog.md",
+                "file": "git/git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/rsyslog.md",
+                "file": "git/git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/rsyslog.md"
+                "file": "git/git.md"
               }
             }
           }
@@ -153,15 +153,18 @@
   },
   "active": "ee9ee50f0aed3f2e",
   "lastOpenFiles": [
+    "nodejs/nodejs01.md",
+    "script/Untitled mindmap.md",
+    "linux/기타.md",
+    "linux/rsyslog.md",
+    "nodejs",
     "study/정처기/두음암기.md",
     "study/정처기/실기.md",
     "linux/isms.md",
-    "linux/rsyslog.md",
     "linux/disk.md",
     "linux/command.md",
     "linux/apache.md",
     "git/git.md",
-    "linux/기타.md",
     "linux/제어문.md",
     "conflict-files-obsidian-git.md",
     "dump.sh.md",
@@ -181,7 +184,6 @@
     "linux",
     "Linux/apache/apache-config.md",
     "Welcome.md",
-    "Linux/apache",
-    "Linux/apache-config"
+    "Linux/apache"
   ]
 }

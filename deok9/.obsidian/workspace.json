@@ -16,19 +16,8 @@
                 "file": "nodejs/nodejs01.md"
               }
             }
-          },
-          {
-            "id": "8d632501b25a20e4",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.5"
-              }
-            }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -162,18 +151,18 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "8d632501b25a20e4",
+  "active": "ee9ee50f0aed3f2e",
   "lastOpenFiles": [
-    "git/git.md",
+    "script/Untitled mindmap.md",
     "nodejs/nodejs01.md",
-    "linux/isms.md",
     "linux/rsyslog.md",
+    "linux/isms.md",
+    "git/git.md",
     "linux/disk.md",
     "linux/command.md",
     "linux/apache.md",
     "linux/제어문.md",
     "linux/기타.md",
-    "script/Untitled mindmap.md",
     "nodejs",
     "study/정처기/두음암기.md",
     "study/정처기/실기.md",

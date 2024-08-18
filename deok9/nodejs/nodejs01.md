@@ -208,25 +208,23 @@ mindmap-plugin: basic
 
 
 ## kubernetes
-- Sub title
-	- deployment yaml
+- deployment yaml
 
-		-
-		  ```
-		  kubectl create deployment node01-deploy --image=localhost/node01:latest --replicas=2 --dry-run=client -o yaml > node01.yaml
-		  ```
+	-
+	  ```
+	  kubectl create deployment node01-deploy --image=localhost/node01:latest --replicas=2 --dry-run=client -o yaml > node01.yaml
+	  ```
 
-- Sub title
-	- service
+- service
 
-		-
-		  ```
-		  kubectl expose deployment node01-deploy --name=node01-svc --type=NodePort --port=3000 --target-port=3000
-		  ```
+	-
+	  ```
+	  kubectl expose deployment node01-deploy --name=node01-svc --type=NodePort --port=3000 --target-port=3000
+	  ```
 
 
 ## v2
-- isnta.js
+- index.js
 
 	-
 	  ```

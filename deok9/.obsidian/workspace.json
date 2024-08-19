@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "linux/command.md"
+                "file": "nodejs/node01.md"
               }
             }
           }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/command.md",
+                "file": "nodejs/node01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/command.md",
+                "file": "nodejs/node01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/command.md"
+                "file": "nodejs/node01.md"
               }
             }
           }
@@ -153,14 +153,14 @@
   },
   "active": "ee9ee50f0aed3f2e",
   "lastOpenFiles": [
+    "linux/disk.md",
+    "linux/isms.md",
+    "linux/command.md",
     "nodejs/node01.md",
     "study/Docker.md",
     "script/Untitled mindmap.md",
     "linux/rsyslog.md",
-    "linux/isms.md",
     "git/git.md",
-    "linux/disk.md",
-    "linux/command.md",
     "linux/apache.md",
     "linux/제어문.md",
     "linux/기타.md",

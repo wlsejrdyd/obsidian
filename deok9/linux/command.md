@@ -21,6 +21,14 @@ mindmap-plugin: basic
 ## curl
 - script 바로실행
 
+	-
+	  ```
+	  curl -s http://yourserver.com/uploads/myscript.sh | bash
+	  
+	  
+	  ```
+
+
 ## screen
 - 생성
 
@@ -79,4 +87,10 @@ mindmap-plugin: basic
 
 	-
 	  ```
-	  wget -qO- http://yourserver.com/uploads/myscript.sh | bash
+	  wget -qO- http://yourserver.com/uploads/myscript.sh | bash```
+
+- Data 전송
+
+	-
+	  ```
+	  wget -qO- "http://192.168.219.2:3000/update?id=$(hostname)&data=$(date)"

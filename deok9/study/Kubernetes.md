@@ -10,4 +10,9 @@ mindmap-plugin: basic
 
 -
   ```
-  kubectl taint nodes --all node-role.kubernetes.io/master-
+  kubectl describe node master | grep Taints
+
+
+	-
+	  ```
+	  kubectl taint nodes --all node-role.kubernetes.io/control-plane:NoSchedule-

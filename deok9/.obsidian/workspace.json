@@ -30,6 +30,7 @@
       {
         "id": "3221549499c2e75d",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "f533474278ae7ecf",
@@ -54,6 +55,7 @@
       {
         "id": "f38e5cfc05d3abdc",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "1a002894b61f44e5",
@@ -154,10 +156,10 @@
   "active": "3b2d9fb301ac4451",
   "lastOpenFiles": [
     "study/Docker.md",
+    "study/Kubernetes.md",
     "nodejs/node01.md",
     "study/정처기/두음암기.md",
     "study/정처기/실기.md",
-    "study/Kubernetes.md",
     "linux/disk.md",
     "linux/isms.md",
     "linux/command.md",

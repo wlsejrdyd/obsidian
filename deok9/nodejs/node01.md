@@ -4,7 +4,7 @@ mindmap-plugin: basic
 
 ---
 
-# nodejs01
+# node01
 
 ## version
 - v16.20.2
@@ -392,3 +392,70 @@ mindmap-plugin: basic
 	  ```
 
 		- pre 태그를 사용해서 문자 그대로 가져오게 함. (p 태그에서 변경.)
+- home.html
+
+	-
+	  ```
+	  <!DOCTYPE html>
+	  <html>
+	  <head>
+	  <title>Great Deok</title>
+	  </head>
+	  <body>
+	  <h1>제공 항목 (개발중)</h1>
+	  <nav>
+	  <ul>
+	  <li><a href="/">메인</a></li>
+	  <li><a href="/product">서버 시간 출력</a></li>
+	  <li><a href="/upload">파일업로드</a></li>
+	  <li><a href="/files">파일업로드 목록</a></li>
+	  <li><a href="/uploads">업로드 서빙</a></li>
+	  <li><a href="/update">서버 데이터 저장</a></li>
+	  <li><a href="/display">서버 데이터</a></li>
+	  </ul>
+	  </nav>
+	  <p>개발중</p>
+	  </body>
+	  </html>
+
+- public.html
+
+	-
+	  ```
+	  <!DOCTYPE html>
+	  <html lang="en">
+	  <head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Great Deok</title>
+	  <script>
+	  // 5초마다 페이지 새로고침
+	  setTimeout(() => {
+	  window.location.reload();
+	  }, 5000);
+	  
+	  
+	  
+	  
+	  // 스크립트로 서버에서 시간을 가져와서 출력하는 함수
+	  function loadTime() {
+	  fetch('/api/time')
+	  .then(response => response.json())
+	  .then(data => {
+	  document.getElementById('current-time').innerText = `Current Time: ${data.currentTime}`;
+	  })
+	  .catch(error => console.error('Error:', error));
+	  }
+	  
+	  
+	  
+	  
+	  window.onload = loadTime;
+	  </script>
+	  </head>
+	  <body>
+	  <h1>서버 스크립트 동작 테스트 페이지</h1>
+	  <div id="current-time">Loading...</div>
+	  <a href="/">메인</a>
+	  </body>
+	  </html>

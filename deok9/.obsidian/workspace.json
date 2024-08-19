@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "nodejs/node01.md"
+                "file": "study/Kubernetes.md"
               }
             }
           }
@@ -92,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodejs/node01.md",
+                "file": "study/Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodejs/node01.md",
+                "file": "study/Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodejs/node01.md"
+                "file": "study/Kubernetes.md"
               }
             }
           }
@@ -155,15 +155,15 @@
   },
   "active": "3b2d9fb301ac4451",
   "lastOpenFiles": [
+    "nodejs/node01.md",
+    "script/Untitled mindmap.md",
+    "study/Docker.md",
+    "study/Kubernetes.md",
     "linux/disk.md",
     "linux/isms.md",
     "linux/rsyslog.md",
-    "nodejs/node01.md",
-    "script/Untitled mindmap.md",
     "study/정처기/두음암기.md",
     "study/정처기/실기.md",
-    "study/Docker.md",
-    "study/Kubernetes.md",
     "linux/command.md",
     "git/git.md",
     "linux/apache.md",

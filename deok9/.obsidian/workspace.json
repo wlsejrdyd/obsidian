@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "nodejs/nodejs01.md"
+                "file": "study/Untitled mindmap.md"
               }
             }
           }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodejs/nodejs01.md",
+                "file": "study/Untitled mindmap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodejs/nodejs01.md",
+                "file": "study/Untitled mindmap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodejs/nodejs01.md"
+                "file": "study/Untitled mindmap.md"
               }
             }
           }
@@ -153,8 +153,9 @@
   },
   "active": "ee9ee50f0aed3f2e",
   "lastOpenFiles": [
-    "script/Untitled mindmap.md",
     "nodejs/nodejs01.md",
+    "study/Untitled mindmap.md",
+    "script/Untitled mindmap.md",
     "linux/rsyslog.md",
     "linux/isms.md",
     "git/git.md",

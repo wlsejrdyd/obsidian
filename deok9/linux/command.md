@@ -19,6 +19,7 @@ mindmap-plugin: basic
 		- 1.1.1.1 의 겹치는 수 모두 제외
 
 ## curl
+- script 바로실행
 
 ## screen
 - 생성
@@ -72,3 +73,10 @@ mindmap-plugin: basic
 	  ```
 
 		- test.txt 파일의 13번째 줄을 출력 한다
+
+## wget
+- script 바로실행
+
+	-
+	  ```
+	  wget -qO- http://yourserver.com/uploads/myscript.sh | bash

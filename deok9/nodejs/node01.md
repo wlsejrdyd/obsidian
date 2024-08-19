@@ -396,6 +396,7 @@ mindmap-plugin: basic
 
 	-
 	  ```
+	  
 	  <!DOCTYPE html>
 	  <html>
 	  <head>
@@ -409,7 +410,6 @@ mindmap-plugin: basic
 	  <li><a href="/product">서버 시간 출력</a></li>
 	  <li><a href="/upload">파일업로드</a></li>
 	  <li><a href="/files">파일업로드 목록</a></li>
-	  <li><a href="/uploads">업로드 서빙</a></li>
 	  <li><a href="/update">서버 데이터 저장</a></li>
 	  <li><a href="/display">서버 데이터</a></li>
 	  </ul>
@@ -459,3 +459,9 @@ mindmap-plugin: basic
 	  <a href="/">메인</a>
 	  </body>
 	  </html>
+
+- Server Data 입력 방법
+
+	-
+	  ```
+	  wget -qO- "http://192.168.219.2:3000/update?id=$(hostname)&data=$(date)

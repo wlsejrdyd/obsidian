@@ -12,3 +12,5 @@ mindmap-plugin: basic
   ```
   kubectl describe node master | grep Taints
   ```
+
+	- kubectl taint nodes --all node-role.kubernetes.io/control-plane:NoSchedule 뒤에 빼기 붙혀야 함...

@@ -88,9 +88,25 @@ mindmap-plugin: basic
 	-
 	  ```
 	  wget -qO- http://yourserver.com/uploads/myscript.sh | bash```
+	  
+	  ```
 
 - Data 전송
 
 	-
 	  ```
 	  wget -qO- "http://192.168.219.2:3000/update?id=$(hostname)&data=$(date)"
+	  ```
+
+	- Base64 인코딩
+
+		-
+		  ```
+		  data=$(echo -n "something#123" | base64)
+		  ```
+
+
+			-
+			  ```
+			  wget -qO- "http://192.168.219.2:3000/update?id=$(hostname)&data=${data}"
+			  ```

@@ -12,6 +12,7 @@ mindmap-plugin: basic
 ## 히스토리
 - v1 : nodejs 공부 및 exec 함수를 통한 서버 스크립트 결과 값 출력
 - v2 : wget 에서 각자 다른 서버에서 웹서버로 데이터 전송하는 기능을 추가하고, shell script 업로드 할 수 있는 페이지를 새로 만들고 /upload 페이지에서 업로드 된 파일 리스트 출력 할 수 있는 /files 페이지를 만듦
+- v3 : bootstrap 검색하다가 디자인을 한번 입혀봤고, home / product.html 을 수정, nav / footer.html 을 신규로 생성하고, docker image 를 생성하여 kubernets 에 동작중이던 pod 를 삭제하고 자동으로 containerd 에 import 한 image 를 읽어 오는지 확인하여, 정상적인 배포까지 확인완료
 
 ## v1
 - index.js
@@ -236,9 +237,7 @@ mindmap-plugin: basic
 	  const port = 80;
 	  const { exec } = require('child_process');
 	  
-	  
 	  app.use(express.static('public'));
-	  
 	  
 	  // Multer 설정: 파일을 저장할 위치와 파일명 지정
 	  const storage = multer.diskStorage({
@@ -250,9 +249,7 @@ mindmap-plugin: basic
 	  }
 	  });
 	  
-	  
 	  const upload = multer({ storage: storage });
-	  
 	  
 	  // 서버별 데이터를 저장할 객체
 	  let serverData = {};
@@ -327,8 +324,8 @@ mindmap-plugin: basic
 	  
 	  // Update 데이터 저장 라우트
 	  app.get('/update', (req, res) => {
-	  const serverId = req.query.id;  // 서버 식별자
-	  const data = req.query.data;    // 전송된 데이터
+	  const serverId = req.query.id; // 서버 식별자
+	  const data = req.query.data; // 전송된 데이터
 	  
 	  
 	  if (serverId && data) {
@@ -469,6 +466,9 @@ mindmap-plugin: basic
 	-
 	  ```
 	  wget -qO- "http://192.168.219.2:3000/update?id=$(hostname)&data=$(date)```
+	  
+	  
+	  ```
 
 
 ## v3
@@ -562,8 +562,8 @@ mindmap-plugin: basic
 	  
 	  // Update 데이터 저장 라우트
 	  app.get('/update', (req, res) => {
-	  const serverId = req.query.id;  // 서버 식별자
-	  const data = req.query.data;    // 전송된 데이터
+	  const serverId = req.query.id;  // 서버 식별자
+	  const data = req.query.data;    // 전송된 데이터
 	  
 	  if (serverId && data) {
 	  // 서버 ID에 해당하는 데이터 저장
@@ -802,3 +802,39 @@ mindmap-plugin: basic
 	  <p>&copy; 2024 Great Deok. All Rights Reserved.</p>
 	  </footer>
 	  ```
+
+- docker
+
+	-
+	  ```
+	  docker start registry
+	  ```
+
+		- 기존에 있던 node01 덮어쓰기 확인함
+
+	-
+	  ```
+	  cd /app/node01
+	  docker build .
+	  docker tag {image id} localhost:5000/node01:latest
+	  docker push localhost:5000/node01:latest
+	  ```
+
+		- worker node containerd image import
+
+			-
+			  ```
+			  docker pull 192.168.219.2:5000/node01:latest
+			  docker save -o node01.tar 192.168.219.2:5000/node01:latest
+			  ctr -a /run/containerd/containerd.sock --namespace k8s.io images import node01.tar
+			  ```
+
+- kubernetes
+	- worker node continaerd docker image import 이후
+
+		-
+		  ```
+		  kubectl delete pods {node container name}
+		  ```
+
+			- 변경 한 containerd docker image로 변경 됨을 확인

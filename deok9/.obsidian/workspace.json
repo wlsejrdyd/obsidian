@@ -13,7 +13,7 @@
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "study/Kubernetes.md"
+                "file": "nodejs/node01.md"
               }
             }
           }
@@ -92,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/Kubernetes.md",
+                "file": "nodejs/node01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/Kubernetes.md",
+                "file": "nodejs/node01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/Kubernetes.md"
+                "file": "nodejs/node01.md"
               }
             }
           }
@@ -155,20 +155,22 @@
   },
   "active": "3b2d9fb301ac4451",
   "lastOpenFiles": [
+    "script/Untitled mindmap.md",
     "nodejs/node01.md",
-    "linux/command.md",
-    "study/정처기/두음암기.md",
-    "study/정처기/실기.md",
     "study/Docker.md",
     "study/Kubernetes.md",
-    "script/Untitled mindmap.md",
-    "linux/disk.md",
-    "linux/isms.md",
+    "MindMap/d.md",
     "linux/rsyslog.md",
-    "git/git.md",
+    "MindMap",
+    "linux/isms.md",
+    "linux/disk.md",
+    "linux/command.md",
     "linux/apache.md",
     "linux/제어문.md",
+    "git/git.md",
     "linux/기타.md",
+    "study/정처기/두음암기.md",
+    "study/정처기/실기.md",
     "nodejs",
     "conflict-files-obsidian-git.md",
     "dump.sh.md",
@@ -187,7 +189,6 @@
     "project",
     "linux",
     "Linux/apache/apache-config.md",
-    "Welcome.md",
-    "Linux/apache"
+    "Welcome.md"
   ]
 }

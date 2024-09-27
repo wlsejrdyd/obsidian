@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ae89ac225b29c745",
+        "id": "bdd9bc76be27c3b7",
         "type": "tabs",
         "children": [
           {
-            "id": "3b2d9fb301ac4451",
+            "id": "ee9ee50f0aed3f2e",
             "type": "leaf",
             "state": {
               "type": "mindmapView",
@@ -30,7 +30,6 @@
       {
         "id": "3221549499c2e75d",
         "type": "tabs",
-        "dimension": 50,
         "children": [
           {
             "id": "f533474278ae7ecf",
@@ -55,7 +54,6 @@
       {
         "id": "f38e5cfc05d3abdc",
         "type": "tabs",
-        "dimension": 50,
         "children": [
           {
             "id": "1a002894b61f44e5",
@@ -153,23 +151,24 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "3b2d9fb301ac4451",
+  "active": "ee9ee50f0aed3f2e",
   "lastOpenFiles": [
-    "study/정처기/두음암기.md",
-    "study/정처기/실기.md",
-    "study/Docker.md",
+    "nodejs/nodejs01.md",
     "study/Kubernetes.md",
+    "study/Docker.md",
     "nodejs/node01.md",
-    "script/Untitled mindmap.md",
-    "linux/disk.md",
+    "git/git.md",
     "linux/isms.md",
     "linux/rsyslog.md",
+    "linux/disk.md",
     "linux/command.md",
-    "git/git.md",
     "linux/apache.md",
     "linux/제어문.md",
     "linux/기타.md",
+    "script/Untitled mindmap.md",
     "nodejs",
+    "study/정처기/두음암기.md",
+    "study/정처기/실기.md",
     "conflict-files-obsidian-git.md",
     "dump.sh.md",
     "script/script.md",

@@ -420,7 +420,7 @@ mindmap-plugin: basic
 	  
 	  ```
 
-- public.html
+- product.html
 
 	-
 	  ```
@@ -468,4 +468,4 @@ mindmap-plugin: basic
 
 	-
 	  ```
-	  wget -qO- "http://192.168.219.2:3000/update?id=$(hostname)&data=$(date)```
+	  wget -qO- "http://192.168.219.2:3000/update?id=$(hostname)&data=$(date)``````

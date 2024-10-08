@@ -417,6 +417,8 @@ mindmap-plugin: basic
 	  <p>개발중</p>
 	  </body>
 	  </html>
+	  
+	  ```
 
 - public.html
 
@@ -459,9 +461,11 @@ mindmap-plugin: basic
 	  <a href="/">메인</a>
 	  </body>
 	  </html>
+	  
+	  ```
 
 - Server Data 입력 방법
 
 	-
 	  ```
-	  wget -qO- "http://192.168.219.2:3000/update?id=$(hostname)&data=$(date)
+	  wget -qO- "http://192.168.219.2:3000/update?id=$(hostname)&data=$(date)```

@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3b2d9fb301ac4451",
+            "id": "742b4230d6af6c82",
             "type": "leaf",
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "nodejs/node01.md"
+                "file": "study/Kubernetes.md"
               },
               "icon": "blocks",
-              "title": "node01"
-            }
-          },
-          {
-            "id": "742b4230d6af6c82",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.6"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.6"
+              "title": "Kubernetes"
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -113,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nodejs/node01.md",
+                "file": "study/Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +110,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "node01의 백링크"
+              "title": "Kubernetes의 백링크"
             }
           },
           {
@@ -132,12 +119,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nodejs/node01.md",
+                "file": "study/Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "node01의 나가는 링크"
+              "title": "Kubernetes의 나가는 링크"
             }
           },
           {
@@ -159,10 +146,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nodejs/node01.md"
+                "file": "study/Kubernetes.md"
               },
               "icon": "lucide-list",
-              "title": "node01 개요"
+              "title": "Kubernetes 개요"
             }
           }
         ],

@@ -136,4 +136,4 @@ ntp:x:38:38::/etc/ntp:/sbin/nologin
 	  account required pam_faillock.so
 	  ```
 
-		- /etc/system-auth , /etc/password-auth
+		- /etc/system-auth
